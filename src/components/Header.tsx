@@ -32,13 +32,25 @@ export default function Header() {
             </div>
           </div>
           
-          <nav className="hidden md:flex space-x-8">
-            <button onClick={() => scrollToSection('home')} className="text-slate-700 hover:text-blue-600 transition-colors">Главная</button>
-            <button onClick={() => scrollToSection('services')} className="text-slate-700 hover:text-blue-600 transition-colors">Услуги</button>
-            <button onClick={() => scrollToSection('projects')} className="text-slate-700 hover:text-blue-600 transition-colors">Проекты</button>
-            <button onClick={() => scrollToSection('about')} className="text-slate-700 hover:text-blue-600 transition-colors">О компании</button>
-            <button onClick={() => scrollToSection('contacts')} className="text-slate-700 hover:text-blue-600 transition-colors">Контакты</button>
-            <button onClick={() => scrollToSection('news')} className="text-slate-700 hover:text-blue-600 transition-colors">Новости</button>
+          <nav className="hidden md:flex space-x-2">
+            <Button variant="ghost" onClick={() => scrollToSection('home')} className="text-slate-700 hover:text-blue-600 hover:bg-blue-50">
+              Главная
+            </Button>
+            <Button variant="ghost" onClick={() => scrollToSection('services')} className="text-slate-700 hover:text-blue-600 hover:bg-blue-50">
+              Услуги
+            </Button>
+            <Button variant="ghost" onClick={() => scrollToSection('projects')} className="text-slate-700 hover:text-blue-600 hover:bg-blue-50">
+              Проекты
+            </Button>
+            <Button variant="ghost" onClick={() => scrollToSection('about')} className="text-slate-700 hover:text-blue-600 hover:bg-blue-50">
+              О компании
+            </Button>
+            <Button variant="ghost" onClick={() => scrollToSection('contacts')} className="text-slate-700 hover:text-blue-600 hover:bg-blue-50">
+              Контакты
+            </Button>
+            <Button variant="ghost" onClick={() => scrollToSection('news')} className="text-slate-700 hover:text-blue-600 hover:bg-blue-50">
+              Новости
+            </Button>
           </nav>
 
           <div className="flex items-center space-x-4">
